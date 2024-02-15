@@ -1,0 +1,15 @@
+ this code is divided into the 3 way programming method that php uses, having a model that interacts with the DB, a view file that handles what the user sees, a contr file that sits between model and view files and controls what happens between the two
+ The config_session.inc.php file deals with sessions
+ The dbh.inc.php deals with the database
+ The files starting with signup deal with registration and the files starting with login deal with login
+
+ --------------------------YOU MAY GET AN ERROR SUCH AS----------------------
+ ( Warning: Trying to access array offset on value of type bool in C:\xampp\htdocs\signup\includes\login.inc.php
+Fatal error: Uncaught TypeError: is_password_wrong(): Argument #2 ($hashedPwd) must be of type string, null given, called in C:\xampp\htdocs\signup\includes\login.inc.php on line 21 and defined in C:\xampp\htdocs\signup\includes\login_contr.inc.php:20 Stack trace: #0 C:\xampp\htdocs\signup\includes\login.inc.php(21): is_password_wrong('', NULL) #1 {main} thrown in C:\xampp\htdocs\signup\includes\login_contr.inc.php )
+
+---------THIS TYPE OF ERROR DEPENDS ON WHAT PHP 8 VERSION YOU ARE USING SO YOU MAY GET OR NOT GET IT-----
+ALSO YOU MAY GET OTHER ERRORS BUT THAT IS DUE TO DIFFERENT database CONFIGURATIONS
+
+
+CODE IS FOUND AT https://youtu.be/XDz9SMYyTQo?si=exu9veb5lGr-0dbk for login 
+FOR SIGNUP CODE IS FOUND AT https://youtu.be/Ojk70Ag8Ofs?si=tve4jEmx-I758TiM
